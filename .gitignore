@@ -216,3 +216,26 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project datasets
+data/raw/*
+data/processed/*
+
+# Keep only small public samples
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Environment variables and credentials
+.env
+*.env
+
+# Power BI temporary files
+*.pbit.tmp
+~$*.pbix
+
+# Excel temporary files
+~$*.xlsx
+
+# PostgreSQL backups
+*.backup
+*.dump
